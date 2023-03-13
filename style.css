@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    background-color: black;
+    padding: 5px 90px;
+    margin: 0;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 auto 0 0;
+}
+
+.logo a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.right-nav {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    
+}
+
+.right-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero-section {
+    background-color: black;
+    height: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 100px 100px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.hero-title {
+    color: white;
+    display: flex;
+    height: 100px;
+    width: 500px;
+    
+}
+
+.hero-title h1 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero-img {
+    margin-top: 50px;
+}
+
+.hero-img img {
+    width: 300px;
+    
+}
