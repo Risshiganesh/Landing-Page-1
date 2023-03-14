@@ -26,7 +26,7 @@ body {
     display: flex;
     gap: 15px;
     list-style-type: none;
-    
+
 }
 
 .right-nav a {
@@ -35,9 +35,13 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.site-body {
+    margin: auto;
+}
+
 .hero-section {
     background-color: black;
-    height: 1080px;
+    height: 720px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -52,12 +56,12 @@ body {
     display: flex;
     height: 100px;
     width: 500px;
-    
+
 }
 
 .hero-title h1 {
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .hero-img {
@@ -66,5 +70,205 @@ body {
 
 .hero-img img {
     width: 300px;
+
+}
+
+.hero-paragraph {
+    color: white;
+    width: 600px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hero-section button {
+    background-color: black;
+    height: 50px;
+    width: 110px;
+    border-radius: 30px;
+    border-color: pink;
+    padding: 10px;
+}
+
+.hero-section button a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: white;
+    align-self: center;
+
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
     
+
+}
+
+.section-1 h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: grey;
+    
+}
+
+.info-img {
+    width: 250px;
+    height: 250px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 5px;
+    border-radius: 40px;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.info-p p {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+
+.section-2 {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+    
+    
+}
+
+.section-2-box {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 100px;
+}
+
+
+.section-2-phrase {
+    width: 800px;
+    
+}
+
+.section-2-phrase p {
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+.section-2 .section-2-name p {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 150px;
+}
+
+.section-3-box {
+    display: flex;
+    background-color: darkmagenta;
+    align-items: center;
+    padding: 25px 120px;
+    border-radius: 5px;
+
+}
+
+.section-3-button button {
+    margin-left: 120px;
+    background-color: darkmagenta;
+    height: 50px;
+    width: 110px;
+    border-radius: 10px;
+    border-color: white;
+    padding: 10px;
+
+}
+
+.section-3-button button a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.section-3-bold p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-3-subtext p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer {
+    height: 100px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-box a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    color: white;
+    align-self: center;
+}
+
+.hero-button {
+    display: flex;
+    height: 50px;
+    width: 110px;
+    border-radius: 10px;
+    border-color: white;
+    padding: 10px;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+
 }
