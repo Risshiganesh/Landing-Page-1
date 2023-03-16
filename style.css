@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     
 }
 
@@ -55,12 +56,12 @@ body {
     height: 1080px;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 190px 0px 10px;
     justify-content: flex-start;
     align-items: center;
     
-
 }
 
 .hero-title {
