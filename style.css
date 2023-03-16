@@ -1,14 +1,22 @@
 body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
     display: flex;
+    box-sizing: border-box; /*keeps everything within the specified width*/
     background-color: black;
-    padding: 5px 90px;
+    padding: 5px 30px;
     margin: 0;
     color: white;
+    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px white solid;
+    z-index: +2;
 }
 
 .logo {
@@ -26,6 +34,7 @@ body {
     display: flex;
     gap: 15px;
     list-style-type: none;
+    padding: 0;
 
 }
 
@@ -40,28 +49,35 @@ body {
 }
 
 .hero-section {
-    background-color: black;
-    height: 720px;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    width: 100%;
+    height: 100vh;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 100px 100px;
+    padding: 190px 0px 10px;
     justify-content: flex-start;
     align-items: center;
+    
 
 }
 
 .hero-title {
-    color: white;
-    display: flex;
-    height: 100px;
-    width: 500px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
 
 }
 
 .hero-title h1 {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-img {
@@ -83,22 +99,25 @@ body {
 
 .hero-section button {
     background-color: black;
-    height: 50px;
-    width: 110px;
-    border-radius: 30px;
-    border-color: pink;
-    padding: 10px;
-}
-
-.hero-section button a {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     color: white;
-    align-self: center;
-
 }
+
+
 
 .section-1 {
     display: flex;
@@ -106,7 +125,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
-    
+
 
 }
 
@@ -115,7 +134,7 @@ body {
     margin-top: 100px;
     font-family: 'Source Sans Pro', sans-serif;
     color: grey;
-    
+
 }
 
 .info-img {
@@ -155,8 +174,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(37, 37, 37);
-    
-    
+
+
 }
 
 .section-2-box {
@@ -171,7 +190,7 @@ body {
 
 .section-2-phrase {
     width: 800px;
-    
+
 }
 
 .section-2-phrase p {
@@ -201,7 +220,7 @@ body {
 
 .section-3-box {
     display: flex;
-    background-color: darkmagenta;
+    background-color: darkblue;
     align-items: center;
     padding: 25px 120px;
     border-radius: 5px;
@@ -209,23 +228,28 @@ body {
 }
 
 .section-3-button button {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     margin-left: 120px;
-    background-color: darkmagenta;
-    height: 50px;
-    width: 110px;
-    border-radius: 10px;
-    border-color: white;
-    padding: 10px;
-
-}
-
-.section-3-button button a {
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
     text-decoration: none;
     font-size: 15px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     color: white;
+    
+
 }
+
 
 .section-3-bold p {
     font-family: 'Source Sans Pro', sans-serif;
@@ -260,15 +284,23 @@ body {
     align-self: center;
 }
 
-.hero-button {
-    display: flex;
-    height: 50px;
-    width: 110px;
-    border-radius: 10px;
-    border-color: white;
-    padding: 10px;
-    background-color: aliceblue;
-    justify-content: center;
-    align-items: center;
+.background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
+@media (min-aspect-ratio: 16/9){
+    .background-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .background-video{
+        width: auto;
+        height: 100%;
+    }
 }
